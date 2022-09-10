@@ -35,3 +35,14 @@ abs.addEventListener('click', ()=>{
         subresult.innerText = result.innerText;
     }
 })
+modulus.addEventListener('click', ()=> {
+    if(result.innerText > 0 || result.innerText < 0){
+        result.innerText /= 100;
+        subresult.innerText = result.innerText;
+        
+
+    }else{
+    result.innerText = subresult.innerText / 100;
+    subresult.innerText = result.innerText;
+    }
+})
