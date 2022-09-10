@@ -19,3 +19,19 @@ let plus = document.querySelector('.plus');
 let zero = document.querySelector('.zero');
 let dot = document.querySelector('.dot');
 let equal = document.querySelector('.equal');          
+ac.addEventListener('click', ()=>{
+    result.innerText = ' ';
+    subresult.innerText = ' ';
+});
+
+abs.addEventListener('click', ()=>{
+    if(result.innerText > 0 || result.innerText < 0){
+        result.innerText *= -1;
+        subresult.innerText = result.innerText;
+
+    }else{
+        result.innerText = subresult.innerText *= -1;
+        subresult.innerText = ' ';
+        subresult.innerText = result.innerText;
+    }
+})
