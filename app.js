@@ -46,3 +46,56 @@ modulus.addEventListener('click', ()=> {
     subresult.innerText = result.innerText;
     }
 })
+seven.addEventListener('click', ()=> {
+    subresult.innerText += 7;
+})
+eight.addEventListener('click', ()=> {
+    subresult.innerText += 8;
+})
+nine.addEventListener('click', ()=> {
+    subresult.innerText += 9;
+})
+four.addEventListener('click', ()=> {
+    subresult.innerText += 4;
+})
+five.addEventListener('click', ()=> {
+    subresult.innerText += 5;
+})
+six.addEventListener('click', ()=> {
+    subresult.innerText += 6;
+})
+one.addEventListener('click', ()=> {
+    subresult.innerText += 1;
+})
+two.addEventListener('click', ()=> {
+    subresult.innerText += 2;
+})
+three.addEventListener('click', ()=> {
+    subresult.innerText += 3;
+})
+zero.addEventListener('click', ()=> {
+    subresult.innerText += 0;
+})
+dot.addEventListener('click', ()=> {
+    subresult.innerText += '.';
+})
+divide.addEventListener('click', ()=> {
+    subresult.innerText += '/';
+})
+multiply.addEventListener('click', ()=> {
+    subresult.innerText += '*';
+})
+minus.addEventListener('click', ()=> {
+    subresult.innerText += '-';
+})
+plus.addEventListener('click', ()=> {
+    subresult.innerText += '+';
+})
+
+
+
+equal.addEventListener('click', ()=> {
+    let son = eval(subresult.innerText)
+    result.innerText = son.toFixed(2);
+    subresult.innerText = result.innerText;
+})
